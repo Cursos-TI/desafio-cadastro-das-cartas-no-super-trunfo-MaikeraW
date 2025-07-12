@@ -7,6 +7,32 @@
 //Teste larissa
 
 int main() {
+        char codigo1[20];
+        char estado1[20];
+        char cidade1[20];
+        int populacao1;
+        int area1;
+        int pib1;
+        int pontosturisticos1;
+
+    printf("Cadastrar Nova Carta\n\n");
+    printf("Código da carta:\n");
+    scanf("%s", &codigo1);
+    printf("Estado Brasileiro:\n");
+    scanf("%s", &estado1);
+    printf("Nome da cidade:\n");
+    scanf(" &s", &cidade1);
+    
+
+
+    printf("Carta 01\n\n");
+    printf("Código da Carta: %s", codigo1);
+    printf("Estado: %s", estado1);
+    printf("Cidade: %s", cidade1);
+
+
+
+
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     

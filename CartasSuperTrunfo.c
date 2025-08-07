@@ -1,11 +1,5 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste Maikera
-
 int main() {
 
         //opcoes do menu
@@ -29,7 +23,7 @@ int main() {
         float pib2;
         int pontosturisticos2;
 
-            
+            //"Tela Inicial"
     printf("**Jogo Super Trunfo Virtual**\n\n");
     printf("Antes de tudo, vamos cadastras as cartas do nosso jogo!\n\n");
 
@@ -82,30 +76,6 @@ scanf("%d", &menua);
 
 switch (menua)
 {
-case 2:
-    //Mostrando as informações das cartas
-    printf("\n\n\nCarta 01\n\n");
-    printf("Código da Carta: %s\n", codigo1);
-    printf("Estado: %s\n", estado1);
-    printf("Cidade: %s\n", cidade1);
-    printf("População: %d Hab.\n", populacao1);
-    printf("Área total: %.2f Km²\n", area1);
-    printf("PIB: %.2f Bi\n", pib1);
-    printf("Pontos Turísticos: %d\n", pontosturisticos1);
-    printf("Densidade Populacional: %2.f Hab./Km²\n", denpop1);
-    printf("Pib Per Capita: R$ %.2f", pibper1);
-
-    printf("\n\n\nCarta 02\n\n");
-    printf("Código da Carta: %s\n", codigo2);
-    printf("Estado: %s\n", estado2);
-    printf("Cidade: %s\n", cidade2);
-    printf("População: %d Hab.\n", populacao2);
-    printf("Área total: %.2f Km²\n", area2);
-    printf("PIB: %.2f Bi\n", pib2);
-    printf("Pontos Turísticos: %d\n", pontosturisticos2);
-    printf("Densidade Populacional: %2.f Hab./Km²\n", denpop2);
-    printf("Pib Per Capita: R$ %.2f\n\n", pibper2);
-    break;
 case 1:
     printf("\nQual atributo gostaria de comparar?\n");
     printf("1. População Total\n");
@@ -171,6 +141,30 @@ case 1:
         break;
         }
     break;
+case 2:
+    //Mostrando as informações das cartas
+    printf("\n\n\nCarta 01\n\n");
+    printf("Código da Carta: %s\n", codigo1);
+    printf("Estado: %s\n", estado1);
+    printf("Cidade: %s\n", cidade1);
+    printf("População: %d Hab.\n", populacao1);
+    printf("Área total: %.2f Km²\n", area1);
+    printf("PIB: %.2f Bi\n", pib1);
+    printf("Pontos Turísticos: %d\n", pontosturisticos1);
+    printf("Densidade Populacional: %2.f Hab./Km²\n", denpop1);
+    printf("Pib Per Capita: R$ %.2f", pibper1);
+
+    printf("\n\n\nCarta 02\n\n");
+    printf("Código da Carta: %s\n", codigo2);
+    printf("Estado: %s\n", estado2);
+    printf("Cidade: %s\n", cidade2);
+    printf("População: %d Hab.\n", populacao2);
+    printf("Área total: %.2f Km²\n", area2);
+    printf("PIB: %.2f Bi\n", pib2);
+    printf("Pontos Turísticos: %d\n", pontosturisticos2);
+    printf("Densidade Populacional: %2.f Hab./Km²\n", denpop2);
+    printf("Pib Per Capita: R$ %.2f\n\n", pibper2);
+    break;
 case 3:
     printf("***O jogo***\n\n");
     printf("O jogo Super Trunfo consiste em comparar um dos atributos entre duas cartas e verificar qual tem o melhor valor.\n");
@@ -179,46 +173,6 @@ case 3:
 default:
     break;
 }    
-    
-    //Definindo os vencedores, comparando todos os atributos:
-
-    /*printf("A carta vencedora é: \n\n");
-    printf("No item Área Total: ");
-        if (area1 > area2)
-        {
-            printf("A carta 1 é vencedora com %.2f Km²!\n", area1);
-        } else
-            printf("A carta 2 é vencedora com %.2f Km²!\n", area2);
-
-    printf("No item PIB: ");
-        if (pib1 > pib2)
-        {
-            printf("A carta 1 é vencedora com R$ %.2f Bilhões!\n", pib1);
-        } else
-            printf("A carta 2 é vencedora com R$ %.2f Bilhões!\n", pib2);
-
-    printf("No item Pontos Turísticos: ");
-        if (pontosturisticos1 > pontosturisticos2)
-        {
-            printf("A carta 1 é vencedora com %d pontos turísticos!\n", pontosturisticos1);
-        } else
-            printf("A carta 2 é vencedora com %d pontos turísticos!\n", pontosturisticos2);
-
-    printf("No item Densidade Populacional: ");
-        if (denpop1 > denpop2)
-        {
-            printf("A carta 1 é vencedora com %.2f Hab./Km²!\n", denpop1);
-        } else
-            printf("A carta 2 é vencedora com %.2f Hab./Km²!\n", denpop2);
-
-    printf("No item Pib per Capita: ");
-        if (pibper1 > pibper2)
-        {
-            printf("A carta 1 é vencedora com R$ %.2f \n", pibper1);
-        } else
-            printf("A carta 2 é vencedora com R$ %.2f \n", pibper2);*/
-
-
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     

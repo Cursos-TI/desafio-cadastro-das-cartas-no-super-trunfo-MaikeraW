@@ -3,7 +3,7 @@
 int main() {
 
         //opcoes do menu
-        int menua, menub, menuc;
+        int menua, menub;
 
         //declarando as variaveis da carta 01
         char codigo1[4];
@@ -30,10 +30,10 @@ int main() {
     // User inserindo as informações da carta 01
     printf("Cadastrar Nova Carta\n\n");
     printf("Código da carta:\n");
-    scanf("%s", &codigo1);
+    scanf("%s", codigo1);
     printf("Estado Brasileiro:\n");
-    scanf("%s", &estado1);
-    printf("Nome da cidade:\n");
+    scanf("%s", estado1);
+    printf("Nomeda cidade:\n");
     scanf("%s", &cidade1);
     printf("População (nº Bruto):\n");
     scanf("%d", &populacao1);
@@ -47,11 +47,11 @@ int main() {
     // User inserindo as informações da carta 02
     printf("\n\nCadastrar Nova Carta\n\n");
     printf("Código da carta:\n");
-    scanf("%s", &codigo2);
+    scanf("%s", codigo2);
     printf("Estado Brasileiro:\n");
-    scanf("%s", &estado2);
+    scanf("%s", estado2);
     printf("Nome da cidade:\n");
-    scanf("%s", &cidade2);
+    scanf("%s", cidade2);
     printf("População (nº Bruto):\n");
     scanf("%d", &populacao2);
     printf("Área total (mil Km²):\n");
@@ -91,7 +91,7 @@ case 1:
         case 1:
             printf("%s: %d Hab.\n", cidade1, populacao1);
             printf("%s: %d Hab.\n", cidade2, populacao2);
-            if (populacao1 = populacao2)
+            if (populacao1 == populacao2)
             { printf("Empate entre as cartas!\n");
             } else if (populacao1 > populacao2)
             {
@@ -101,7 +101,7 @@ case 1:
         case 2:
             printf("%s: %.2f Km²\n", cidade1, area1);
             printf("%s: %.2f Km²\n", cidade2, area2);
-            if (area1 = area2)
+            if (area1 == area2)
             { printf("Empate entre as cartas!\n");
             } else if (area1 > area2)
             {
@@ -111,7 +111,7 @@ case 1:
         case 3:
             printf("%s: %.2f Bilhões\n", cidade1, pib1);
             printf("%s: %.2f Bilhões\n", cidade2, pib2);
-            if (pib1 = pib2)
+            if (pib1 == pib2)
             { printf("Empate entre as cartas!\n");
             } else if (pib1 > pib2)
             {
@@ -121,7 +121,7 @@ case 1:
         case 4:
             printf("%s: %d Pontos Turísticos\n", cidade1, pontosturisticos1);
             printf("%s: %d Pontos Turísticos\n", cidade2, pontosturisticos2);
-            if (pontosturisticos1 = pontosturisticos2)
+            if (pontosturisticos1 == pontosturisticos2)
             { printf("Empate entre as cartas!\n");
             } else if (pontosturisticos1 > pontosturisticos2)
             {
@@ -131,7 +131,7 @@ case 1:
         case 5:
             printf("%s: %.2f Hab./Km²\n", cidade1, denpop1);
             printf("%s: %.2f Hab./Km²\n", cidade2, denpop2);
-            if (denpop1 = denpop2)
+            if (denpop1 == denpop2)
             { printf("Empate entre as cartas\n!");
             } else if (denpop1 < denpop2)
             {
@@ -141,7 +141,7 @@ case 1:
         case 6:
             printf("%s: R$ %.2f \n", cidade1, pibper1);
             printf("%s: R$ %.2f \n", cidade2, pibper2);
-            if (pibper1 = pibper2)
+            if (pibper1 == pibper2)
             { printf("Empate entre as cartas!\n");
             } else if (pibper1 > pibper2)
             {
